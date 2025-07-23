@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Leave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <h2>Apply Leave</h2>
+      <form onsubmit="return validateLeaveForm()">
+
+        <div class="input-group">
+          <label for="from">From Date</label>
+          <input type="date" id="from" name="fromDate" required />
+        </div>
+
+        <div class="input-group">
+          <label for="to">To Date</label>
+          <input type="date" id="to" name="toDate" required />
+        </div>
+
+        <div class="input-group">
+          <label for="leaveType">Leave Type</label>
+          <select id="leaveType" name="leaveType" required>
+            <option value="" disabled selected>Select reason</option>
+            <option value="Fever">Fever</option>
+            <option value="Personal">Personal</option>
+            <option value="Family Function">Family Function</option>
+            <option value="Health Emergency">Health Emergency</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="reason">Details (optional)</label>
+          <textarea id="reason" name="reason" rows="4" placeholder="Explain your reason (optional)"></textarea>
+        </div>
+
+        <!-- Button group for submission -->
+        <div class="btn-group">
+          <button type="submit" class="btn">Submit</button>
+          <a href="login.html" class="btn">Logout</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
