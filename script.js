@@ -1,4 +1,4 @@
-// ✅ LOGIN FORM VALIDATION
+//  LOGIN FORM VALIDATION
 function validateLogin() {
   const username = document.getElementById("loginUsername");
   const password = document.getElementById("loginPassword");
@@ -25,7 +25,7 @@ function validateLogin() {
   }
 }
 
-// ✅ REGISTRATION FORM VALIDATION WITH PASSWORD RULES
+//  REGISTRATION FORM VALIDATION WITH PASSWORD RULES
 function validateRegister() {
   const username = document.getElementById("registerUsername");
   const password = document.getElementById("registerPassword");
@@ -40,7 +40,7 @@ function validateRegister() {
     return false;
   }
 
-  // ✅ Password Rule Check
+  //  Password Rule Check
   const pass = password.value;
   const passRules = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,}$/;
 
@@ -72,7 +72,7 @@ function validateRegister() {
   return false;
 }
 
-// ✅ LEAVE FORM VALIDATION
+//  LEAVE FORM VALIDATION
 function validateLeaveForm() {
   const from = document.getElementById("from");
   const to = document.getElementById("to");
